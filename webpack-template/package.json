@@ -1,0 +1,25 @@
+{
+  "name": "webpack-template",
+  "version": "1.0.0",
+  "description": "webpack template for projects",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/battinson/webpack.git"
+  },
+  "homepage": "https://github.com/battinson/webpack#readme",
+  "keywords": [
+    "webpack",
+    "nodejs"
+  ],
+  "author": "Battinson",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
