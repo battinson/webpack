@@ -6,7 +6,8 @@
   "private": true,
   "scripts": {
     "start": "webpack -r esm --config=./webpack/config/webpack.common.js",
-    "prod": "webpack -r esm --config=./webpack/config/webpack.prod.js"
+    "prod": "webpack -r esm --config=./webpack/config/webpack.prod.js",
+    "dev": "webpack -r esm --config=./webpack/config/webpack.dev.js"
   },
   "repository": {
     "type": "git",
