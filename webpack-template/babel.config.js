@@ -1,4 +1,5 @@
 export default (api) => {
+  const env = api.env();
   api.cache.using(() => process.env.NODE_ENV);
 
   // Presets
@@ -15,12 +16,12 @@ export default (api) => {
     "@babel/react",
   ];
 
-  //   if (process.env["ENV"] === "prod") {
-  //     plugins.push();
-  //   }
-
   // Plugins
   const plugins = ["@babel/plugin-proposal-class-properties"];
+
+  if (env === "development") {
+    plugins.push("react-hot-loader/babel");
+  }
 
   return {
     presets,

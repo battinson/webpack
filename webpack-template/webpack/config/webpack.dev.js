@@ -26,5 +26,10 @@ export default () =>
       hot: true,
       open: true,
     },
+    resolve: {
+      alias: {
+        "react-dom": "@hot-loader/react-dom",
+      },
+    },
     plugins: [new HotModuleReplacementPlugin()],
   });
