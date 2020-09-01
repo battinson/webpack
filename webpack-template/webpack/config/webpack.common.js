@@ -18,7 +18,7 @@ export default () =>
         main: [SRC_DIR],
       },
     },
-    modules.setupHtml(),
+    modules.setupPug(),
     modules.useCleanPlugin(env),
     modules.loadScss(),
     modules.useBabelLoader()

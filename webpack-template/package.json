@@ -36,6 +36,8 @@
     "esm": "^3.2.25",
     "html-webpack-plugin": "^4.4.1",
     "node-sass": "^4.14.1",
+    "pug": "^3.0.0",
+    "pug-loader": "^2.4.0",
     "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
