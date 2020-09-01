@@ -19,5 +19,6 @@ export default () =>
       },
     },
     modules.setupHtml(),
-    modules.useCleanPlugin(env)
+    modules.useCleanPlugin(env),
+    modules.loadScss()
   );
