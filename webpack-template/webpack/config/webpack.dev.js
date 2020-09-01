@@ -16,4 +16,8 @@ export default () =>
       filename: "[name].js",
       path: DIST_DIR,
     },
+    devServer: {
+      contentBase: DIST_DIR,
+      overlay: true,
+    },
   });
