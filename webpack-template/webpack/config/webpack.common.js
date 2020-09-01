@@ -7,6 +7,9 @@ import { SRC_DIR } from "../util/constants";
 // Modules
 import * as modules from "../modules";
 
+// Env
+const env = process.env.NODE_ENV;
+
 // Common Configuration
 export default () =>
   merge(
@@ -15,5 +18,6 @@ export default () =>
         main: [SRC_DIR],
       },
     },
-    modules.setupHtml()
+    modules.setupHtml(),
+    modules.useCleanPlugin(env)
   );

@@ -2,6 +2,7 @@
 import webpack from "webpack";
 import express from "express";
 import webpackDevMiddleware from "webpack-dev-middleware";
+import chalk from "chalk";
 
 // Production Configuration
 import getDevConfig from "../config/webpack.dev";
@@ -19,4 +20,6 @@ const devMiddleware = webpackDevMiddleware(compiler, getDevConfig().devServer);
 app.use(devMiddleware);
 app.use(staticMiddleware);
 
-app.listen(PORT, HOST, () => console.log("Server is running..."));
+app.listen(PORT, HOST, () =>
+  console.log(chalk.blueBright(`Server is listening at http://${HOST}:${PORT}`))
+);

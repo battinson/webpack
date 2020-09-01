@@ -2,7 +2,7 @@
 import HtmlWebpackPlugin from "html-webpack-plugin";
 
 // Constants
-import { HTML_DIR } from "../util/constants";
+import { HTML_DIR, ASSETS_DIR } from "../util/constants";
 
 // Setup
 export const setupHtml = () => ({
@@ -10,6 +10,7 @@ export const setupHtml = () => ({
     new HtmlWebpackPlugin({
       template: `${HTML_DIR}/index.html`,
       title: "🚀 Webpack",
+      favicon: `${ASSETS_DIR}/images/webpack.ico`,
     }),
   ],
 });
