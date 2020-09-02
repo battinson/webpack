@@ -20,6 +20,6 @@ export default () =>
     },
     modules.setupPug(),
     modules.useCleanPlugin(env),
-    modules.loadScss(),
+    modules.loadScss(env),
     modules.useBabelLoader()
   );
