@@ -1,8 +1,12 @@
 // Styles
 import "./styles/index.scss";
 
-// React
-import "./react";
+// Core
+import React from "react";
+import { render } from "react-dom";
+import App from "./react/app";
+
+render(<App />, document.getElementById("root"));
 
 class Point {
   x = 10;

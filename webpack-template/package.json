@@ -2,6 +2,10 @@
   "name": "webpack-template",
   "version": "1.0.0",
   "description": "webpack template for projects",
+  "sideEffects": [
+    "**/*.css",
+    "**/*.scss"
+  ],
   "main": "index.js",
   "private": true,
   "scripts": {
@@ -41,6 +45,7 @@
     "sass-loader": "^10.0.1",
     "style-loader": "^1.2.1",
     "webpack": "^4.44.1",
+    "webpack-bundle-analyzer": "^3.8.0",
     "webpack-cli": "^3.3.12",
     "webpack-dev-middleware": "^3.7.2",
     "webpack-hot-middleware": "^2.25.0",
