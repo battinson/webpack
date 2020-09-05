@@ -21,5 +21,6 @@ export default () =>
     modules.setupPug(),
     modules.useCleanPlugin(env),
     modules.loadScss(env),
-    modules.useBabelLoader()
+    modules.useBabelLoader(),
+    modules.loadFonts()
   );

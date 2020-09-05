@@ -29,7 +29,7 @@ export const loadScss = (env) => {
     : {
         plugins: [
           new MiniCssExtractPlugin({
-            filename: "[name].[contenthash].css",
+            filename: "css/[name].[contenthash].css",
           }),
         ],
         module: {

@@ -25,6 +25,13 @@ export default () =>
       overlay: true,
       hot: true,
       open: true,
+      historyApiFallback: true,
+      quiet: true,
+      stats: {
+        colors: true,
+        chunks: false,
+        modules: false,
+      },
     },
     resolve: {
       alias: {

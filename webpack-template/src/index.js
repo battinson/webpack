@@ -1,10 +1,10 @@
 // Styles
 import "./styles/index.scss";
 
-// Core
+// React
 import React from "react";
 import { render } from "react-dom";
-import App from "./react/app";
+import { App } from "./react";
 
 render(<App />, document.getElementById("root"));
 

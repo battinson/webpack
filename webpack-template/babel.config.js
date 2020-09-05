@@ -7,7 +7,7 @@ export default (api) => {
     [
       "@babel/env",
       {
-        debug: true,
+        debug: false,
         spec: true,
         loose: false,
         modules: false,
