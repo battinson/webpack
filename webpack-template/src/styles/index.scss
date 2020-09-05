@@ -1,12 +1,25 @@
 @import "../assets/fonts/fonts.scss";
 
+// body
 body {
   background-color: rgb(205, 118, 223);
   font-family: "Montserrat";
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
 }
 
-h1,
-h1,
 h3 {
   font-family: "Montserrat";
+}
+h2 {
+  font-family: "Montserrat";
+}
+h1 {
+  font-family: "Montserrat";
+}
+
+::placeholder {
+  color: gray;
 }

@@ -1,5 +1,11 @@
 // Core
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import { resolve } from "path";
+
+// Constants
+import { ROOT_DIR } from "../util/constants";
+console.log(ROOT_DIR);
+import getPost from "../../postcss.config";
 
 // Scss
 export const loadScss = (env) => {
@@ -43,6 +49,12 @@ export const loadScss = (env) => {
                 {
                   loader: "css-loader",
                   options: { sourceMap: false },
+                },
+                {
+                  loader: "postcss-loader",
+                  options: {
+                    config: { path: resolve(__dirname, "postcss.config.js") },
+                  },
                 },
                 {
                   loader: "sass-loader",
